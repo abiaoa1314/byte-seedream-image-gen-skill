@@ -16,23 +16,17 @@
 
 ## 安装
 
-### ModelScope 魔搭
-
-```bash
-npx skills add https://www.modelscope.cn/skills/@byte-dance/seedream-image-gen
-```
-
 ### GitHub
 
 ```bash
-npx skills add byte-dance/seedream-image-gen
+npx skills add abiaoa1314/byte-seedream-image-gen-skill
 ```
 
 ### 手动安装
 
 1. 下载本仓库
-2. 复制 `byte-seedream-image-gen/` 到：
-   - 项目级：`.opencode/skills/` 或 `.claude/skills/` 或 `.agents/skills/`
+2. 复制 `byte-seedream-image-gen-skill/` 到：
+   - 项目级：`.opencode/skills/`
    - 全局：`~/.config/opencode/skills/` 或 `~/.claude/skills/` 或 `~/.agents/skills/`
 
 ## 配置
@@ -91,7 +85,7 @@ python scripts/generate.py \
 ## 项目结构
 
 ```
-byte-seedream-image-gen/
+byte-seedream-image-gen-skill/
 ├── SKILL.md                 # Skill 主文档（必读）
 ├── README.md                # 本文件
 ├── LICENSE                  # MIT 协议
