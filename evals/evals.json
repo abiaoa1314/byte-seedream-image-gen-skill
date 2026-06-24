@@ -1,0 +1,60 @@
+{
+  "skill_name": "byte-seedream-image-gen",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我生成一张 16:9 的科技感壁纸，深蓝色背景，要有光纤线条和未来感",
+      "expected_output": "生成一张 2848x1600 的 PNG 科技感壁纸",
+      "files": [],
+      "expectations": [
+        "脚本成功调用 API 并返回图片 URL",
+        "输出尺寸为 2848x1600（16:9 2K）",
+        "图片保存到 seedream-output 目录"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "生成一张商品图，白色背景，一个红色马克杯，电商风格",
+      "expected_output": "生成一张 1:1 的商品图，白色背景",
+      "files": [],
+      "expectations": [
+        "脚本成功调用 API",
+        "输出格式为 PNG",
+        "图片主体清晰，背景干净"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "用这张照片生成一个动漫风格的头像",
+      "expected_output": "图生图成功，输出动漫风格头像",
+      "files": ["test-portrait.jpg"],
+      "expectations": [
+        "脚本正确处理参考图",
+        "输出为动漫风格",
+        "保留原图基本构图"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "融合这两张图的元素，生成一张赛博朋克风格的场景",
+      "expected_output": "多图融合成功，输出赛博朋克风格图片",
+      "files": ["ref-city.jpg", "ref-neon.jpg"],
+      "expectations": [
+        "脚本正确处理多张参考图",
+        "融合两张图的特征",
+        "整体风格统一"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "生成一组4张的插画，展示咖啡从豆子到杯子的过程",
+      "expected_output": "组图模式生成4张关联插画",
+      "files": [],
+      "expectations": [
+        "脚本使用组图模式",
+        "生成4张图片",
+        "图片之间有叙事连续性"
+      ]
+    }
+  ]
+}
